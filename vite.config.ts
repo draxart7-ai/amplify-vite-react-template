@@ -12,6 +12,12 @@ export default defineConfig({
       enabled: true,
       reporter: ["text", "html"], // Generates a text output in console and an HTML report
       include: ["src/**"], // Recommended: specify which files to include
+      exclude: [
+        "src/tests/**",
+        "src/constants.ts",
+        "src/main.tsx",
+        "src/vite-env.d.ts",
+      ],
     },
   },
 });
